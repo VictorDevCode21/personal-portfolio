@@ -1,8 +1,21 @@
+import About from '@/components/about'
+import Footer from '@/components/footer'
+import Header from '@/components/header'
+import Nav from '@/components/nav'
+import Projects from '@/components/projects'
+import Skills from '@/components/skills'
 import Image from 'next/image'
 
 
 export default function Home() {
   return (
-    <main></main>
+    <main>
+      <Nav />
+      <Header />
+      <About />
+      <Skills />
+      <Projects />
+      <Footer />
+    </main>
   )
 }
