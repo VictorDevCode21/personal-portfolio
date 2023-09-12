@@ -4,10 +4,10 @@ import Header from '@/components/header'
 import Nav from '@/components/nav'
 import Projects from '@/components/projects'
 import Skills from '@/components/skills'
-import Image from 'next/image'
 
 
 export default function Home() {
+  
   return (
     <main>
       <Nav />

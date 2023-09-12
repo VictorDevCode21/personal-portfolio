@@ -5,7 +5,7 @@ import React from 'react'
 
 function About() {
     return (
-        <section className='w-full h-screen bg-blue-bg flex items-center justify-center '>
+        <section id='about' className='w-full h-screen flex items-center justify-center bg-blue-bg'>
             <div className='w-1/2 h-1/2 pl-20 pr-20 flex '>
                 <Image src="/images/set-up-example-photo.jpg" alt="pc" width={2440} height={1980} />
             </div>

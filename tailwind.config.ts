@@ -34,8 +34,9 @@ module.exports = {
         'gray-gm': '#4B4B4B',
         'gray-hvr': '#a6a2a2',
         'light-blue': "#0ef",
-        'dark-blue': "#081b29",
-        'blue-bg': "#00003F",
+        'dark-blue': "#38046c",
+        'blue-bg': "#110652",
+        'pink-letters':'#cb1b58',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

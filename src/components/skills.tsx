@@ -4,7 +4,7 @@ import { SiJavascript, SiTypescript, SiPrisma, SiNextdotjs, SiPostgresql, SiReac
 
 function Skills() {
     return (
-        <section className='w-full h-screen flex bg-blue-bg items-center'>
+        <section id='skills' className='w-full h-screen flex items-center' style={{backgroundImage: 'url(/images/wallpaper-6.jpg)', backgroundSize: 'cover'}}>
             <div className='w-1/2 h-full flex items-center '>
                 <div className='flex flex-col w-96 pl-32'>
                     <h2 className='text-light-blue font-bold text-4xl pb-8'>Skills</h2>
