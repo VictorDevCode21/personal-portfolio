@@ -5,6 +5,7 @@ function Nav() {
   const scrollToTop = () => {
     scroll.scrollToTop();
   };
+  
   return (
     <nav className='w-full h-20 flex bg-blue-bg sticky top-0'>
       <div className='w-1/3 h-full flex justify-center items-center'>
