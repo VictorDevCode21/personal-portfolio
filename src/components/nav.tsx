@@ -1,8 +1,6 @@
 import { Link, animateScroll as scroll } from "react-scroll";
 
 
-
-
 function Nav() {
   const scrollToTop = () => {
     scroll.scrollToTop();
