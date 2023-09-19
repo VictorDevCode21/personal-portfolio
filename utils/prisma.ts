@@ -12,4 +12,5 @@ let prisma: PrismaClient;
     prisma = globalPrisma.prisma;
     }
 
+    
 export default prisma;
