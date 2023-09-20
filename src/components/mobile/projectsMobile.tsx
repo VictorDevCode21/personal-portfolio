@@ -14,11 +14,11 @@ export interface Posts {
     project_url: string;
 }
 
-function Projects() {
+function ProjectsMobile() {
     const [posts, setPosts] = useState<Posts[]>([]);
     const [start, setStart] = useState(0);
 
-    const prev = () => setStart((start) => (start === 0 ? posts.length - 3 : start - 1));
+    const prev = () => setStart((start) => (start === 0 ? posts.length - 1 : start - 1));
     const next = () => setStart((start) => (start === posts.length - 1 ? 0 : start + 1));
 
     useEffect(() => {
@@ -32,15 +32,15 @@ function Projects() {
     }, []);
 
     return (
-        <section id='projects' className='w-full h-screen bg-blue-bg lg:flex flex-col justify-center items-center xs:hidden'>
+        <section id='projectsm' className='w-full h-full bg-blue-bg xs:flex flex-col justify-center items-center lg:hidden pb-20'>
             <div className='w-full h-full pl-14 pr-14 flex flex-col items-center justify-center'>
-                <h2 className='font-bold text-light-blue text-4xl '>Experience</h2>
-                <div className='flex justify-center items-center pt-28'>
-                    {[...posts, ...posts.slice(0, 2)].slice(start, start + 3).map((post) => (
+                <h2 className='font-bold text-light-blue text-4xl pt-20'>Experience</h2>
+                <div className='flex justify-center items-center pt-20 '>
+                    {[...posts, ...posts.slice(0, 2)].slice(start, start + 1).map((post) => (
                         <div key={post.id} className='w-full h-full  flex flex-col'>
-                            <div className='lg:px-10 xs:px-3  '>
+                            <div className=' xs:px-3  '>
                                 <Link href={post.project_url} className='w-full h-full flex flex-col'>
-                                    <Image className='lg:w-80 lg:h-48 xs:w-40 xs:h-48' src={post.img_url} alt={post.img_alt} width={1080} height={720} />
+                                    <Image className='xs:w-80 xs:h-60' src={post.img_url} alt={post.img_alt} width={1080} height={720} />
                                     <h3 className='text-light-blue font-bold text-xl'>{post.name}</h3>
                                     <p className='text-white'>{post.description}</p>
                                 </Link>
@@ -53,13 +53,13 @@ function Projects() {
                 <div className=" inset-0 flex items-center justify-between ">
                     <button
                         onClick={prev}
-                        className=" p-1 rounded-full shadow text-gray-800 hover:bg-light-blue hover:text-black absolute lg:bottom-64 lg:left-6"
+                        className=" p-1 rounded-full shadow text-gray-800 bg-light-blue hover:text-black absolute bottom-48 left-2 "
                     >
                         <BsChevronLeft size={40} />
                     </button>
                     <button
                         onClick={next}
-                        className=" p-1 rounded-full shadow text-gray-800 hover:bg-light-blue hover:text-black absolute lg:bottom-64 lg:right-6"
+                        className=" p-1 rounded-full shadow text-gray-800 bg-light-blue hover:text-black absolute bottom-48 right-2 "
                     >
                         <BsChevronRight size={40} />
                     </button>
@@ -69,4 +69,4 @@ function Projects() {
     )
 }
 
-export default Projects
+export default ProjectsMobile

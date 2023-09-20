@@ -8,13 +8,13 @@ import AnimatedText2 from './animated/animatedText2'
 
 function Header() {
     return (
-        <header id='home' className='w-full h-screen' style={{backgroundImage: 'url(/images/wallpaper-5.jpg)', backgroundSize: 'cover'}}>
-            <div className='flex h-full w-full '>
-                <div className='w-1/2 h-full flex flex-col items-start justify-center pr-20 '>
+        <header id='home' className='w-full lg:h-screen xs:h-full lg:bg-left-bottom lg:pt-0 lg:pb-0 xs:pt-20 xs:pb-20 ' style={{backgroundImage: 'url(/images/wallpaper-5.jpg)'}}>
+            <div className='flex h-full w-full xs:flex-col-reverse lg:flex-row'>
+                <div className='lg:w-1/2 lg:h-full flex flex-col lg:items-start lg:justify-center lg:pl-0 lg:pb-0 lg:pr-20 xs:items-start xs:pl-4 xs:pb-10 '>
                     <AnimatedText text='I am Victor Rivas' />
                     <AnimatedText2 text="Passionate Full-Stack web developer with a knack for innovation. 
                     I'm dedicated to crafting seamless, user-centric web solutions. With a competitive spirit and a commitment to continuous learning." />
-                    <div className='flex pl-32 justify-between w-96 pt-6'>
+                    <div className='flex lg:pl-32 lg:pr-0 justify-between w-96 lg:pt-6 xs:pt-8 xs:pl-4 xs:pr-16'>
                         <Link href="https://www.linkedin.com/in/victor-rivas-2a146328b/">
                             <button className='p-2 rounded-full bg-transparent border-light-blue border-2 text-light-blue hover:bg-light-blue hover:text-black'>
                                 <SiLinkedin size={20}/>
@@ -36,12 +36,12 @@ function Header() {
                             </button>
                         </a>
                     </div>
-                    <div className='w-full flex pl-32 pt-8 '>
+                    <div className='w-full flex lg:pl-32 pt-8 xs:pl-4 '>
                         <button className='text-white font-semibold text-lg bg-light-blue px-4 rounded-full'>Download my resume</button>
                     </div>
                 </div>
-                <div className='w-1/2 h-full flex items-center justify-center pb-20 '>
-                    <Image className='w-80 h-80 border-8 border-light-blue rounded-full ' src='/images/photo-003.JPG' alt="holi" width={2440} height={1980} />
+                <div className='lg:w-1/2 lg:h-full flex lg:items-center lg:justify-center lg:pb-20 lg:pt-0 xs:items-start xs:justify-center xs:pt-10 xs:pb-10 '>
+                    <Image className='lg:w-96 lg:h-80 xs:w-80 xs:h-72 border-8 border-light-blue shadow-2xl shadow-light-blue ' src='/images/photo-003.JPG' alt="holi" width={2440} height={1980} />
                 </div>
             </div>
         </header>

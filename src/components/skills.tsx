@@ -4,11 +4,11 @@ import { SiJavascript, SiTypescript, SiPrisma, SiNextdotjs, SiPostgresql, SiReac
 
 function Skills() {
     return (
-        <section id='skills' className='w-full h-screen flex items-center' style={{backgroundImage: 'url(/images/wallpaper-6.jpg)', backgroundSize: 'cover'}}>
-            <div className='w-1/2 h-full flex items-center '>
-                <div className='flex flex-col w-96 pl-32'>
-                    <h2 className='text-light-blue font-bold text-4xl pb-8'>Skills</h2>
-                    <h3 className='text-white font-medium text-2xl pb-8'>Web Development</h3>
+        <section id='skills' className='w-full lg:h-screen xs:h-full flex lg:flex-row xs:flex-col-reverse items-center lg:bg-right-bottom lg:pt-0 lg:pb-0 xs:bg-bottom xs:pt-10 xs:pb-12 ' style={{backgroundImage: 'url(/images/wallpaper-6.jpg)'}}>
+            <div className='lg:w-1/2 lg:h-full xs:w-full xs:h-1/2 flex items-center lg:justify-start xs:justify-center '>
+                <div className='flex flex-col lg:w-96 lg:pl-32 lg:pt-0 lg:pb-0 xs:pb-10 xs:pt-10'>
+                    <h2 className='text-light-blue font-bold text-4xl lg:pb-8 xs:pb-4'>Skills</h2>
+                    <h3 className='text-white font-medium text-2xl lg:pb-8 xs:pb-4'>Web Development</h3>
                     <div className='flex justify-between '>
                         <SiJavascript size={30} className='text-light-blue' />
                         <SiTypescript size={30} className='text-light-blue' />
@@ -30,8 +30,8 @@ function Skills() {
                     </div>
                 </div>
             </div>
-            <div className='w-1/2 h-1/2  pr-20 flex '>
-                <Image className='w-full h-full' src="/images/png-vector.png" alt="pc" width={500} height={500} />
+            <div className='lg:w-1/2 lg:h-1/2 xs:w-full xs:h-1/2 lg:pr-20 lg:pt-0 xs:pt-20 flex justify-center'>
+                <Image className='lg:w-full lg:h-full xs:w-80 xs:h-72' src="/images/png-vector.png" alt="pc" width={500} height={500} />
             </div>
         </section>
     )

@@ -5,12 +5,12 @@ import Link from 'next/link'
 
 function Footer() {
   return (
-    <footer id='contact' className='w-full h-20 flex bg-blue-bg border-t-2 border-light-blue'>
-      <div className='w-1/3 h-full flex justify-center items-center'>
+    <footer id='contact' className='w-full h-20 flex  bg-blue-bg border-t-2 border-light-blue'>
+      <div className='w-1/3 h-full flex justify-center items-center xs:pl-8 lg:pl-0'>
         <p className='text-white font-bold text-2xl'>Contact</p>
         <p className='text-light-blue font-bold text-2xl pl-2'>Me</p>
       </div>
-      <div className='w-2/3 h-full flex justify-between items-center pr-40 pl-40'>
+      <div className='w-2/3 h-full flex justify-between items-center lg:pr-40 lg:pl-40 xs:pr-4 xs:pl-14'>
         <Link href="https://www.linkedin.com/in/victor-rivas-2a146328b/">
           <button className='p-2 rounded-full bg-transparent border-light-blue border-2 text-light-blue hover:bg-light-blue hover:text-black'>
             <SiLinkedin size={20} />
