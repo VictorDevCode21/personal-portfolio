@@ -26,7 +26,7 @@ function Footer() {
             <SiGmail size={20} />
           </button>
         </a>
-        <Link href="https://twitter.com/">
+        <Link href="https://twitter.com/VictorRios1102">
           <button className='p-2 rounded-full bg-transparent border-light-blue border-2 text-light-blue hover:bg-light-blue hover:text-black'>
             <RiTwitterXFill size={20} />
           </button>
