@@ -4,7 +4,7 @@ import { SiJavascript, SiTypescript, SiPrisma, SiNextdotjs, SiPostgresql, SiReac
 
 function Skills() {
     return (
-        <section id='skills' className='w-full lg:h-screen xs:h-full flex lg:flex-row xs:flex-col-reverse items-center lg:bg-right-bottom lg:pt-0 lg:pb-0 xs:bg-bottom xs:pt-10 xs:pb-12 ' style={{backgroundImage: 'url(/images/wallpaper-6.jpg)'}}>
+        <section id='skills' className='w-full lg:h-screen xs:h-full flex lg:flex-row xs:flex-col-reverse items-center lg:bg-right-bottom lg:pt-0 lg:pb-0 xs:bg-bottom xs:pt-10 xs:pb-12 ' style={{ backgroundImage: 'url(/images/wallpaper-6.jpg)' }}>
             <div className='lg:w-1/2 lg:h-full xs:w-full xs:h-1/2 flex items-center lg:justify-start xs:justify-center '>
                 <div className='flex flex-col lg:w-96 lg:pl-32 lg:pt-0 lg:pb-0 xs:pb-10 xs:pt-10'>
                     <h2 className='text-light-blue font-bold text-4xl lg:pb-8 xs:pb-4'>Skills</h2>
@@ -26,7 +26,7 @@ function Skills() {
                         <SiCypress size={30} className='text-light-blue' />
                     </div>
                     <div className='pt-10'>
-                        <button className='text-white px-2 rounded-md bg-light-blue font-bold'>Contact me</button>
+                        <a href='mailto:victorrivaswebdev@gmail.com' className='text-white px-2 rounded-md bg-light-blue font-bold'>Contact me</a>
                     </div>
                 </div>
             </div>

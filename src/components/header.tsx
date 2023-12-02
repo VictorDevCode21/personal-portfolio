@@ -9,7 +9,7 @@ import AnimatedText2 from './animated/animatedText2'
 function Header() {
     const handleDownloadResume = () => {
         // Replace '/path/to/resume.pdf' with the actual path to your resume PDF
-        const resumePath = '/pdf/Victor_Rivas_Resume.pdf';
+        const resumePath = '/pdf/Victor_Rivas_-_Full_Stack_Developer.pdf';
 
         // Create an anchor element
         const link = document.createElement('a');
@@ -48,7 +48,7 @@ function Header() {
                                 <SiGithub size={20} />
                             </button>
                         </Link>
-                        <Link href="https://twitter.com/VictorRios1102">
+                        <Link href="https://twitter.com/VRWEBDEV">
                             <button className='p-2 rounded-full bg-transparent border-light-blue border-2 text-light-blue hover:bg-light-blue hover:text-black'>
                                 <RiTwitterXFill size={20} />
                             </button>
