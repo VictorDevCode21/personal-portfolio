@@ -10,8 +10,7 @@ export default async function Project(req: NextApiRequest, res: NextApiResponse)
     try {
         const projects = await prisma.project.findMany({
         });
-        
-        
+
         res.json(projects);
     } catch (error) {
         return res.status(500).json({ message: "Could not get the post, please try later", error });
