@@ -9,9 +9,10 @@ let prisma: PrismaClient;
     if (!globalPrisma.prisma) {
         globalPrisma.prisma = new PrismaClient();
     }
-    
+
     prisma = globalPrisma.prisma;
     }
+
 
     
 export default prisma;
