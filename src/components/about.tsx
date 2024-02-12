@@ -5,7 +5,7 @@ import React from 'react'
 
 function About() {
     return (
-        <section id='about' className='w-full lg:h-screen xs:h-full flex lg:flex-row xs:flex-col items-center justify-center bg-blue-bg lg:pt-0 lg:pb-0 xs:pt-10 xs:pb-20 '>
+        <section id='about' className='w-full lg:h-[100vh] xs:h-full flex lg:flex-row xs:flex-col items-center justify-center bg-blue-bg lg:pt-0 lg:pb-0 xs:pt-10 xs:pb-20 '>
             <div className='lg:w-1/2 lg:h-1/2 xs:w-full xs:h-1/2 lg:pl-20 lg:pr-20 lg:pt-0 flex xs:pl-8 xs:pr-8 xs:pt-20 xs:items-center justify-center'>
                 <Image className='lg:w-full lg:h-full xs:w-80 xs:h-72 xs:border-8 xs:border-blue-bg' src="/images/set-up-example-photo.jpg" alt="pc" width={2440} height={1980} />
             </div>

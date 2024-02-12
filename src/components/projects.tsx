@@ -32,39 +32,38 @@ function Projects() {
     }, []);
 
     return (
-        <section id='projects' className='w-full h-screen bg-blue-bg lg:flex flex-col justify-center items-center xs:hidden'>
-            <div className='w-full h-full pl-14 pr-14 flex flex-col items-center justify-center'>
-                <h2 className='font-bold text-light-blue text-4xl '>Experience</h2>
-                <div className='flex justify-center items-center pt-28'>
+        <section id='projects' className='w-full h-[100vh] bg-blue-bg lg:flex lg:flex-col items-center justify-center xs:hidden'>
+            <div className='mb-24'>
+                <h2 className='font-bold text-light-blue text-4xl'>Experience</h2>
+            </div>
+            <div className='w-full flex flex-col items-center justify-center relative'>
+                <div className=' flex justify-center items-center'>
                     {[...posts, ...posts.slice(0, 2)].slice(start, start + 3).map((post) => (
                         <div key={post.id} className='w-full h-full  flex flex-col'>
-                            <div className='lg:px-10 xs:px-3  '>
-                                <Link href={post.project_url} className='w-full h-full flex flex-col'>
+                            <div className='lg:px-10  '>
+                                <Link href={post.project_url} className='flex flex-col text-center'>
                                     <Image className='lg:w-80 lg:h-48 xs:w-40 xs:h-48' src={post.img_url} alt={post.img_alt} width={1080} height={720} />
-                                    <h3 className='text-light-blue font-bold text-xl'>{post.name}</h3>
-                                    <p className='text-white'>{post.description}</p>
+                                    <h3 className='text-light-blue font-bold text-xl mt-2'>{post.name}</h3>
+                                    <p className='text-white mt-2'>{post.description}</p>
                                 </Link>
                             </div>
                         </div>
                     ))}
                 </div>
+                <button
+                    onClick={prev}
+                    className=" p-1 rounded-full shadow text-gray-800 hover:bg-light-blue hover:text-black absolute bottom-1/2 transform -translate-y-1/2 lg:left-6"
+                >
+                    <BsChevronLeft size={40} />
+                </button>
+                <button
+                    onClick={next}
+                    className=" p-1 rounded-full shadow text-gray-800 hover:bg-light-blue hover:text-black absolute bottom-1/2 transform -translate-y-1/2 lg:right-6"
+                >
+                    <BsChevronRight size={40} />
+                </button>
             </div>
-            <div className='relative w-full '>
-                <div className=" inset-0 flex items-center justify-between ">
-                    <button
-                        onClick={prev}
-                        className=" p-1 rounded-full shadow text-gray-800 hover:bg-light-blue hover:text-black absolute lg:bottom-64 lg:left-6"
-                    >
-                        <BsChevronLeft size={40} />
-                    </button>
-                    <button
-                        onClick={next}
-                        className=" p-1 rounded-full shadow text-gray-800 hover:bg-light-blue hover:text-black absolute lg:bottom-64 lg:right-6"
-                    >
-                        <BsChevronRight size={40} />
-                    </button>
-                </div>
-            </div>
+
         </section>
     )
 }

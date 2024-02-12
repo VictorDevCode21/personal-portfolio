@@ -31,7 +31,7 @@ function Header() {
     };
 
     return (
-        <header id='home' className='w-full lg:h-screen xs:h-full lg:bg-left-bottom lg:pt-0 lg:pb-0 xs:pt-20 xs:pb-20 ' style={{ backgroundImage: 'url(/images/wallpaper-5.jpg)' }}>
+        <header id='home' className='w-full lg:h-[100vh] xs:h-full lg:bg-left-bottom lg:pt-0 lg:pb-0 xs:pt-20 xs:pb-20 ' style={{ backgroundImage: 'url(/images/wallpaper-5.jpg)' }}>
             <div className='flex h-full w-full xs:flex-col-reverse lg:flex-row'>
                 <div className='lg:w-1/2 lg:h-full flex flex-col lg:items-start lg:justify-center lg:pl-0 lg:pb-0 lg:pr-20 xs:items-start xs:pl-4 xs:pb-10 '>
                     <AnimatedText text='I am Victor Rivas' />
