@@ -9,7 +9,7 @@ import AnimatedText2 from './animated/animatedText2'
 function Header() {
     const handleDownloadResume = () => {
         // Replace '/path/to/resume.pdf' with the actual path to your resume PDF
-        const resumePath = '/pdf/Victor_Rivas_-_Full_Stack_Developer.pdf';
+        const resumePath = '/pdf/Victor_Rivas_Resume.pdf';
 
         // Create an anchor element
         const link = document.createElement('a');
