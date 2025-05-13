@@ -11,10 +11,10 @@ datasource db {
 }
 
 model Project {
-  id         String   @id @default(uuid())
+  id          String  @id @default(uuid())
   name        String
   description String?
   img_url     String?
   img_alt     String?
-  project_url       String?
+  project_url String?
 }

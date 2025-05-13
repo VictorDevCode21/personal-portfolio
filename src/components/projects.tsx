@@ -37,8 +37,8 @@ function Projects() {
                 <h2 className='font-bold text-light-blue text-4xl'>Experience</h2>
             </div>
             <div className='w-full flex flex-col items-center justify-center relative'>
-                <div className=' flex justify-center items-center'>
-                    {[...posts, ...posts.slice(0, 2)].slice(start, start + 3).map((post) => (
+                <div className='flex justify-center items-center'>
+                    {/* {[...posts, ...posts.slice(0, 2)].slice(start, start + 3).map((post) => (
                         <div key={post.id} className='w-full h-full  flex flex-col'>
                             <div className='lg:px-10  '>
                                 <Link href={post.project_url} className='flex flex-col text-center'>
@@ -48,7 +48,7 @@ function Projects() {
                                 </Link>
                             </div>
                         </div>
-                    ))}
+                    ))} */}
                 </div>
                 <button
                     onClick={prev}
