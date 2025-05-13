@@ -14,6 +14,7 @@ export default async function Project(req: NextApiRequest, res: NextApiResponse)
         
         res.json(projects);
     } catch (error) {
+        console.error("El error es: " + error);
         return res.status(500).json({ message: "Could not get the post, please try later", error });
     }
 }
