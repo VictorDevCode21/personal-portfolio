@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['https://www.vrrdev.com'],
+    domains: ['https://www.vrrdev.com', 'www.vrrdev.com'],
   },
   reactStrictMode: true,
 }
