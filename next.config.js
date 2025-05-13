@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['master.d1d5b6eezynlja.amplifyapp.com'],
+    domains: ['www.vrrdev.com'],
   },
   reactStrictMode: true,
 }

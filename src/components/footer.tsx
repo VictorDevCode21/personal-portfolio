@@ -11,7 +11,7 @@ function Footer() {
         <p className='text-light-blue font-bold text-2xl pl-2'>Me</p>
       </div>
       <div className='w-2/3 h-full flex justify-between items-center lg:pr-40 lg:pl-40 xs:pr-4 xs:pl-14'>
-        {/* <Link href="https://www.linkedin.com/in/victor-rivas-2a146328b/">
+        <Link href="https://www.linkedin.com/in/victor-rivas-2a146328b/">
           <button className='p-2 rounded-full bg-transparent border-light-blue border-2 text-light-blue hover:bg-light-blue hover:text-black'>
             <SiLinkedin size={20} />
           </button>
@@ -30,7 +30,7 @@ function Footer() {
           <button className='p-2 rounded-full bg-transparent border-light-blue border-2 text-light-blue hover:bg-light-blue hover:text-black'>
             <RiTwitterXFill size={20} />
           </button>
-        </Link> */}
+        </Link>
       </div>
     </footer>
   )
