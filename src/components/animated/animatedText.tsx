@@ -21,7 +21,7 @@ const AnimatedText = ({ text }: AnimatedTextProps) => {
         return () => clearInterval(interval);
     }, [fullText]);
 
-    return <h1 className="text-white text-3xl font-bold lg:pl-32 xs:pl-4 pb-4">{displayedText}</h1>;
+    return <h1 className="text-white text-3xl sm:text-4xl font-bold pb-4 min-h-[1em]">{displayedText}</h1>;
 };
 
 export default AnimatedText;
